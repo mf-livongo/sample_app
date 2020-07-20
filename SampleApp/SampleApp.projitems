@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{80ECA872-8831-423A-AFB0-98C28EA07354}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SampleApp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Command.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IRestService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AboutViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ConfigViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\RestService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Config.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Organization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LoginModes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Platform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Features.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Platforms.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ConfigItem.cs" />
+  </ItemGroup>
+</Project>
